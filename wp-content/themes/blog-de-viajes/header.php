@@ -6,6 +6,3 @@
     <?php wp_head(); # Cabecera del sitio (metas, styles, scritps, etc) ?>
   </head>
   <body>
-
-  </body>
-</html>

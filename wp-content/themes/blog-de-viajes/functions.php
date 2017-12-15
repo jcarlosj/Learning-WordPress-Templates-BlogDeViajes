@@ -24,7 +24,10 @@
     # Implementa Bootstrap
     wp_enqueue_script(
       'bootstrap-js',
-      'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'
+      'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js',
+      array( 'jquery' ),    # Dependencias que se cargarán con anterioridad
+      '3.3.7',              # Versión
+      true                  # Agrega al header (False), Agrega al Footer (True)
     );
   }
   add_action( 'wp_enqueue_scripts', 'blogdeviajes_scripts' );  # Hook
