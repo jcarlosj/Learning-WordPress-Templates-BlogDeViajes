@@ -1,4 +1,4 @@
 <?php
-  wp_head();      # Cabecera del sitio (metas, styles, scritps, etc)
+  get_header();
   echo 'Hola esta es la plantilla para "Blog de Viajes"';
 ?>
