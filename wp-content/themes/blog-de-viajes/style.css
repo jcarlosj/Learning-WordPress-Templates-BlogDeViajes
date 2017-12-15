@@ -48,6 +48,14 @@ nav.navigation li {
   nav.navigation {
     padding: 10px 0;
   }
+  /* Agrega efecto Paralax (Desktop) */
+  .site-header {
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .home .site-header {
+    height: 800px;
+  }
   img.logo {
     max-width: 400px;
   }
