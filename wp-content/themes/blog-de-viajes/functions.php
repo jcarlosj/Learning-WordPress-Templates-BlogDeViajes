@@ -31,4 +31,11 @@
     );
   }
   add_action( 'wp_enqueue_scripts', 'blogdeviajes_scripts' );  # Hook
+
+  /* Agrega el soporte para Menus de navegación del sitio */
+  register_nav_menus(
+    array(
+      'menu_principal' => __( 'Menú Principal', 'blogdeviajes' )  
+    )
+  );
 ?>

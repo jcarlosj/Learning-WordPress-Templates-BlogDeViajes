@@ -11,11 +11,17 @@
         <div class="container">
           <div class="row">
             <div class="col-md-4">
-              <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="Blog de Viajes" /> 
+              <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="Blog de Viajes" />
             </div>
             <!-- .col-md-4 -->
             <div class="col-md-8">
-              Menú
+              <?php
+                wp_nav_menu( # Despliega el Menú
+                  array(
+                    'theme_location' => 'menu_principal'
+                  )  
+                );
+              ?>
             </div>
             <!-- .col-md-8 -->
           </div>
