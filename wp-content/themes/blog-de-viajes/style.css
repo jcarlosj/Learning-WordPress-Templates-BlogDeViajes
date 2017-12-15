@@ -8,3 +8,43 @@
   Tags: Bootstrap 4, HTML5, CSS3, Viajes
   Text Domain: blogdeviajes
 */
+
+/* Menú Principal */
+nav.navigation {
+  background-color: #008fD1;
+}
+nav.navigation ul {
+  margin-top: 25px;
+}
+nav.navigation ul li a {
+  padding: 0;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+nav.navigation ul li a:hover {
+  background-color: transparent;
+  border: none;
+}
+nav.navigation li {
+  margin: 0 20px 20px 0;
+  text-align: center;
+}
+.navbar-toggle {
+  border: 1px solid white;
+}
+.navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+@media ( min-width: 768px ) {
+  header {
+    padding-top: 20px;
+  }
+  nav.navigation {
+    padding: 10px 0;
+  }
+  img.logo {
+    max-width: 400px;
+  }
+}
