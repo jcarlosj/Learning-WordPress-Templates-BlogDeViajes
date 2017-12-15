@@ -5,8 +5,16 @@
     <title></title>
     <?php wp_head(); # Cabecera del sitio (metas, styles, scritps, etc) ?>
   </head>
-  <body>
-    <header>
+  <body <?php body_class(); ?>>
+    <?php
+      # Obtenemos la imagen destacada de la página
+      $outstanding_image = wp_get_attachment_image_src(
+        get_post_thumbnail_id(),    # ID de la imagen (Obtiene el ID de la imagen destacada que se cargue)
+        'full'                      # Tamaño ('full' es un tamaño estándar de WordPress)
+      );
+      $outstanding_image = $outstanding_image[ 0 ];   # Obtenemos la URL de la imagen destacada
+    ?>
+    <header class="site-header" style="background-image: url( '<?php echo $outstanding_image; ?>' ); ">
       <nav class="navigation">
         <div class="container">
           <div class="row">

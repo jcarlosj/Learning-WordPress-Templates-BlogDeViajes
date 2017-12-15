@@ -37,10 +37,14 @@ nav.navigation li {
   background-color: white;
 }
 
+.site-header {
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 20px;
+}
+
 @media ( min-width: 768px ) {
-  header {
-    padding-top: 20px;
-  }
   nav.navigation {
     padding: 10px 0;
   }
