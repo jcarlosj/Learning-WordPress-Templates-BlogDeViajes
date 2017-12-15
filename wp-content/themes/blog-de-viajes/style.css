@@ -1,0 +1,15 @@
+/*
+  Theme Name: Blog de Viajes
+  Theme URI:
+  Author: Juan Carlos Jiménez Gutiérrez
+  Description: Theme para sitio web Blog de Viajes
+  Version: 1.0
+  License: GNU General Public License or Later
+  Tags: Bootstrap 4, HTML5, CSS3, Viajes
+  Text Domain: blogdeviajes
+*/
+
+body {
+  background-color: blue;
+  color: white;
+}
