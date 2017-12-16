@@ -44,4 +44,12 @@
 
   /* Agrega soporte para imagen destacada */
   add_theme_support( 'post-thumbnails' );
+
+  /* Agrega soporte para tamaños de imagen */
+  add_image_size(
+    'image-entry',  # Slug de la imagen
+    750,            # Ancho
+    490,            # Altura
+    true            # Crop en true 
+  );
 ?>
