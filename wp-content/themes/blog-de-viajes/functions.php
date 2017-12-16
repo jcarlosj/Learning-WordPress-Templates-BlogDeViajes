@@ -2,6 +2,8 @@
 
   /* Agregamos la funcion que nos permitirá hacer uso de una hoja de estilos */
   function blogdeviajes_styles() {
+    # Implementa 'Raleway' Google Font
+    wp_enqueue_style( 'raleway', 'https://fonts.googleapis.com/css?family=Raleway:900' );
     # Implementa Bootstrap
     wp_enqueue_style(
       'bootstrap-css',
