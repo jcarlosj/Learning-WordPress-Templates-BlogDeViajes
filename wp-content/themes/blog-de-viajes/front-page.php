@@ -33,4 +33,21 @@
       <?php endwhile; wp_reset_postdata(); ?>
     </div>  <!-- .row -->
   </section>  <!-- .container .content -->
+
+  <section class="entry-categories container">
+    <h2 class="text-center">Por categoría</h2>
+    <?php $categories = get_categories();   # Obtenemos todas las categorías que tengal al menos un post asociado a ellas ?>
+    <div class="row">
+
+      <?php foreach ( $categories as $key => $category ) : ?>
+        <div class="col-xs-6 col-md-6 col-lg-3 category">
+          <i></i>
+          <a href="<?php echo get_category_link( $category -> cat_ID ); ?>">
+            <?php echo $category -> name; ?>
+          </a>
+        </div>  <!-- .col-xs-6 .col-md-6 .col-lg-3 .category -->
+      <?php endforeach; ?>
+
+    </div>  <!-- .row -->
+  </section>  <!-- .entry-categories .container -->
 <?php get_footer(); ?>
