@@ -2,6 +2,8 @@
 
   /* Agregamos la funcion que nos permitirá hacer uso de una hoja de estilos */
   function blogdeviajes_styles() {
+    # Implementa FontAwesome
+    wp_enqueue_style( 'fontawesome', get_stylesheet_directory_uri() .'/css/fontawesome-all.min.css' );
     # Implementa Google Fonts
     wp_enqueue_style( 'raleway', 'https://fonts.googleapis.com/css?family=Raleway:900' );
     wp_enqueue_style( 'libre-baskerville', 'https://fonts.googleapis.com/css?family=Libre+Baskerville:700' );
@@ -50,6 +52,6 @@
     'image-entry',  # Slug de la imagen
     750,            # Ancho
     490,            # Altura
-    true            # Crop en true 
+    true            # Crop en true
   );
 ?>
