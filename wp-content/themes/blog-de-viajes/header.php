@@ -29,7 +29,7 @@
                 <img class="logo img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="Blog de Viajes" />
               </a>
             </div>
-            <!-- .col-md-4 -->
+            <!-- .navbar-header -->
             <div class="navbar-right">
               <?php
                 wp_nav_menu( # Despliega el Menú
@@ -42,11 +42,27 @@
                 );
               ?>
             </div>
-            <!-- .col-md-8 -->
+            <!-- .navbar-right -->
           </div>
           <!-- .row -->
         </div>
         <!-- .container -->
       </nav>
       <!-- nav.navigation -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <?php
+              $description = get_bloginfo(
+                'description',    # Nombre del campo
+                'display'         # Filtro
+              );
+            ?>
+            <div class="title">
+              <h1 class="site-title"><span><?php echo $description; ?></span></h1>
+            </div>  <!-- .title -->
+          </div>  <!-- .col-md-6 -->
+        </div>  <!-- .row -->
+      </div>  <!-- .container -->
     </header>
