@@ -8,6 +8,11 @@
   Tags: Bootstrap 4, HTML5, CSS3, Viajes
   Text Domain: blogdeviajes
 */
+
+body {
+  background-color: #F2F2F2;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
@@ -89,4 +94,46 @@ div.title h1 span {
   div.title {
     margin-top: 100px;
   }
+}
+
+/* Últimas entradas */
+section.container .entry {
+  margin-bottom: 20px;
+}
+
+div.content-entry {
+  background-color: white;
+  min-height: 200px;
+  padding: 20px;
+  text-align: center;
+}
+div.content-entry h3 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0 0 16px 0;
+}
+div.content-entry p {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+div.content-entry span {
+  color: #DB008D;
+  font-weight: bold;
+}
+
+div.content-entry .btn.btn-success {
+  background-color: #008FD1;
+  border-radius: 0;
+  border: none;
+  color: white;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 15px 50px;
+  text-transform: uppercase;
+  transition: all .3s ease;
+}
+div.content-entry .btn.btn-success:hover {
+  background-color: #0070A3;
 }

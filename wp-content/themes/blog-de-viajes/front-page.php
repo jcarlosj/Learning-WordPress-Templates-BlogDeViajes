@@ -25,7 +25,7 @@
           <div class="content-entry">
             <?php the_title( '<h3>', '</h3>' ); ?>
             <p>Escrito el: <span><?php the_time( get_option( 'date_format' ) ); ?></span></p>
-            <p>Por: <?php the_author(); ?></p>
+            <p>Por: <span><?php the_author(); ?></p></span>
             <a href="<?php the_permalink(); ?>" class="btn btn-success">Leer más</a>
           </div>
         </div>
