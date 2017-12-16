@@ -36,7 +36,12 @@
 
   <section class="entry-categories container">
     <h2 class="text-center">Por categoría</h2>
-    <?php $categories = get_categories();   # Obtenemos todas las categorías que tengal al menos un post asociado a ellas ?>
+    <?php
+      $args = array(
+        'order' => 'ASC'    # Orden ascendente
+      );
+      $categories = get_categories( $args );   # Obtenemos todas las categorías que tengal al menos un post asociado a ellas
+    ?>
     <div class="row">
 
       <?php foreach ( $categories as $key => $category ) : ?>
