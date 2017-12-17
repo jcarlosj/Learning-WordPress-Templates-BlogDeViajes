@@ -33,7 +33,7 @@
 
       </div>  <!-- .row -->
     </div>  <!-- .container -->
-    <p>Blog de Viajes <?php echo date( 'Y' ); ?> </p>
+    <p class="footer-info">Blog de Viajes <?php echo date( 'Y' ); ?> </p>
   </footer>
   <?php wp_footer(); ?>
   </body>

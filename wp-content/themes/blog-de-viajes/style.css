@@ -177,3 +177,29 @@ section.entry-categories div.category a {
   margin-bottom: 10px;
   text-transform: uppercase;
 }
+
+/* Footer */
+footer {
+  background-color: #008FD1;
+  color: white;
+  margin-top: 30px;
+  padding: 10px 0 0 0;
+  text-align: justify;
+}
+footer h3 {
+  font-size: 22px;
+}
+footer a,
+footer a:hover {
+  color: white;
+  text-decoration: none;
+}
+footer .footer-info {
+  background-color: #004D70;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  margin: 15px 0 0 0;
+  padding: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
