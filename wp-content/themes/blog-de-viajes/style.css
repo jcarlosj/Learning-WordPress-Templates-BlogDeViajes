@@ -260,7 +260,22 @@ section.content {
 }
 
 .page-content {
-  text-align: justify;
+  box-shadow: 768px 0 0 #E6E6E6;
   padding: 20px;
-  box-shadow: 768px 0 0 #D7D7D7;
+  text-align: justify;
+}
+
+aside.sidebar-widget {
+  padding-top: 20px;
+}
+aside.sidebar-widget h3 {
+  font-size: 30px;
+}
+aside.sidebar-widget li {
+  margin-bottom: 10px;
+}
+aside.sidebar-widget li a,
+aside.sidebar-widget li a:hover {
+  color: #008FD1;
+  text-decoration: none;
 }

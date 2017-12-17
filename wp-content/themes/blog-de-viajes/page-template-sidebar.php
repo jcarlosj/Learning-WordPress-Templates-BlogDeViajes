@@ -18,7 +18,7 @@
       <?php endwhile; ?>
 
       <div class="col-sm-4 sidebar">
-        SideBar
+        <?php get_sidebar(); ?>
       </div>  <!-- .col-sm-4 .sidebar -->
 
     </div>

@@ -58,12 +58,25 @@
 
   /* Agrega soporte para Widgets */
   function blogdeviajes_widgets() {
+    /* Widget Footer */
     register_sidebar(
       array(
         'name'          => __( 'Footer Widgets' ),
         'id'            => 'footer_widget',
         'description'   => 'Widgets para el Footer',
         'before_widget' => '<div id="%1$s" class="widget col-sm-6 %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after-title'   => '</h3>'
+      )
+    );
+    /* Widget SideBar */
+    register_sidebar(
+      array(
+        'name'          => __( 'SideBar Widgets' ),
+        'id'            => 'sidebar_widgets',
+        'description'   => 'Widgets para el SideBar',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget'  => '</div>',
         'before_title'  => '<h3 class="widget-title">',
         'after-title'   => '</h3>'
