@@ -4,7 +4,7 @@
    */
   get_header();
 ?>
-  <section class="container-fluid content">
+  <section class="container content">
     <div class="row">
       <?php # Standart Loop WP_Query
         while( have_posts() ):
@@ -12,11 +12,7 @@
       ?>
 
         <div class="col-sm-8 page-content">
-          <div class="row">
-            <div class="col-sm-10 col-sm-offset-2">
-              Contenido
-            </div>  <!-- .col-sm-10 .col-sm-offset-2 -->
-          </div>  <!-- .row -->
+          <?php the_content(); ?>
         </div>  <!-- .col-sm-8 .page-content -->
 
       <?php endwhile; ?>

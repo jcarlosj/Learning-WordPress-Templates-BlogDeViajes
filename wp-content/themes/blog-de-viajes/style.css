@@ -19,6 +19,17 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px;
 }
 
+/* Clases predeterminadas de WordPress cuando se alinean contenidos desde
+   la herramienta WYSWYG desde el ADMIN */
+.alignleft {
+  float: left;
+  margin-right: 20px;
+}
+.alignright {
+  float: right;
+  margin-left: 20px;
+}
+
 /* Menú Principal */
 nav.navigation {
   background-color: #008fD1;
@@ -234,4 +245,22 @@ footer .footer-info {
 }
 #social-networks li a[href*='youtube.com']::before {
   content: '\f167';  /* Falla */
+}
+
+/* Template Content: Página con SideBar */
+section.content {
+  margin-top: 20px;
+}
+
+.page-template-page-template-sidebar-php section.content {
+  margin-top: 0;
+}
+.page-template-page-template-sidebar-php footer {
+  margin-top: 0;
+}
+
+.page-content {
+  text-align: justify;
+  padding: 20px;
+  box-shadow: 768px 0 0 #D7D7D7;
 }
