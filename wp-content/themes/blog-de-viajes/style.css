@@ -203,3 +203,35 @@ footer .footer-info {
   text-align: center;
   text-transform: uppercase;
 }
+/* Menú de Redes Sociales */
+#social-networks {
+  list-style: none;
+}
+#social-networks li {
+  position: relative;
+  display: inline-block;
+}
+#social-networks li a:before {
+  color: white;
+  display: inline-block;
+  content: '\f007';
+  font-family: 'Font Awesome\ 5 Free';
+  font-size: 40px;
+  padding: 0 5px;
+  vertical-align: top;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* TO DO: Hacer que se desplieguen los iconos de redes sociales adecuadamente */
+#social-networks li a[href*='facebook.com']::before {
+  content: '\f007';
+}
+#social-networks li a[href*='twitter.com']::before {
+  content: '\f081';  /* Falla */
+}
+#social-networks li a[href*='plus.google.com']::before {
+  content: '\f007';
+}
+#social-networks li a[href*='youtube.com']::before {
+  content: '\f167';  /* Falla */
+}
