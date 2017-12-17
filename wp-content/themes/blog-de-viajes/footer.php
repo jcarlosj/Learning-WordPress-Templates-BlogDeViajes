@@ -11,6 +11,13 @@
         <div class="col-sm-4">
           <div class="row">
             <h3>Redes Sociales</h3>
+            <?php
+              wp_nav_menu(
+                array(
+                  'theme_location' => 'menu_redes_sociales'
+                )  
+              );
+            ?>
           </div>  <!-- .row -->
         </div>  <!-- .col-sm-4 -->
 

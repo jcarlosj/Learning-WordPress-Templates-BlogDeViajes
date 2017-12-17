@@ -40,7 +40,8 @@
   /* Agrega el soporte para Menus de navegación del sitio */
   register_nav_menus(
     array(
-      'menu_principal' => __( 'Menú Principal', 'blogdeviajes' )
+      'menu_principal'      => __( 'Menú Principal', 'blogdeviajes' ),
+      'menu_redes_sociales' => __( 'Menú Redes Sociales', 'blogdeviajes' )
     )
   );
 
