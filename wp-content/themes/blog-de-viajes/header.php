@@ -53,14 +53,19 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <?php
-              $description = get_bloginfo(
-                'description',    # Nombre del campo
-                'display'         # Filtro
-              );
-            ?>
             <div class="title">
-              <h1 class="site-title"><span><?php echo $description; ?></span></h1>
+              <?php if( is_front_page() ): ?>
+                <?php
+                  $description = get_bloginfo(
+                    'description',    # Nombre del campo
+                    'display'         # Filtro
+                  );
+                ?>
+                <h1 class="site-title"><span><?php echo $description; ?></span></h1>
+              <?php else: ?>
+                <h1 class="site-title"><span><?php the_title(); ?></span></h1>
+              <?php endif; ?>
+
             </div>  <!-- .title -->
           </div>  <!-- .col-md-6 -->
         </div>  <!-- .row -->
