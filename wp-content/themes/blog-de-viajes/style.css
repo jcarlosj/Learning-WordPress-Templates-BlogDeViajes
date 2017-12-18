@@ -299,3 +299,34 @@ aside.sidebar-widget li a:hover {
   color: #008FD1;
   text-decoration: none;
 }
+
+/* Template Content: Página sin SideBar */
+/* Contacto */
+.content-full {
+  padding-top: 50px;
+}
+.nf-form-cont span h3 {
+  display: none;
+}
+.nf-form-fields-required {
+  font-size: 18px;
+  text-align: center;
+}
+.nf-form-content .nf-field-element input,
+.nf-form-content .nf-field-element textarea {
+  border: none;
+  height: 40px;
+}
+.nf-form-content .nf-field-element textarea {
+  height: 200px;
+}
+.nf-form-content .nf-field-label label {
+  font-weight: normal;
+}
+.nf-form-content .nf-field-element input[type=button] {
+  background-color: #0088C6;
+  color: white;
+  font-weight: bold;
+  padding: 10px 40px;
+  text-transform: uppercase;
+}
