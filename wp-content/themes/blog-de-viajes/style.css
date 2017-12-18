@@ -99,7 +99,7 @@ div.title h1 {
   background-color: #008FD1;
   color: white;
   display: inline;
-  font-size: 60px;
+  font-size: 30px;
   margin: 0;
   padding: 4px 0;
 }
@@ -109,6 +109,9 @@ div.title h1 span {
 }
 
 @media ( min-width: 768px ) {
+  div.title h1 {
+    font-size: 60px;
+  }
   nav.navigation {
     padding: 10px 0;
   }
@@ -131,6 +134,7 @@ div.title h1 span {
   .home .site-header {
     height: 800px;
   }
+
   img.logo {
     max-width: 400px;
   }
@@ -155,7 +159,7 @@ div.content-entry {
 }
 div.content-entry h3 {
   font-family: 'Libre Baskerville', serif;
-  font-size: 16px;
+  font-size: 8px;
   font-weight: 700;
   line-height: 24px;
   margin: 0 0 16px 0;
@@ -176,7 +180,7 @@ div.content-entry .btn.btn-success {
   color: white;
   font-weight: bold;
   margin-top: 20px;
-  padding: 15px 50px;
+  padding: 4% 10%;
   text-transform: uppercase;
   transition: all .3s ease;
 }
@@ -184,6 +188,11 @@ div.content-entry .btn.btn-success:hover {
   background-color: #0070A3;
 }
 
+@media ( min-width: 768px ) {
+  div.content-entry h3 {
+    font-size: 16px;
+  }
+}
 /* Categorías */
 section.entry-categories div.category {
   text-align: center;
@@ -219,9 +228,15 @@ section.entry-categories div.category a {
   color: black;
   display: block;
   font-family: 'Libre Baskerville', serif;
-  font-size: 24px;
+  font-size: 14px;
   margin-bottom: 10px;
   text-transform: uppercase;
+}
+
+@media ( min-width: 768px ) {
+  section.entry-categories div.category a {
+    font-size: 24px;
+  }
 }
 
 /* Footer */
