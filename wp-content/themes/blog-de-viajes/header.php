@@ -62,6 +62,8 @@
                   );
                 ?>
                 <h1 class="site-title"><span><?php echo $description; ?></span></h1>
+              <?php elseif( is_category() ): ?>
+                <h1 class="site-title"><span><?php the_archive_title(); ?></span></h1>
               <?php else: ?>
                 <h1 class="site-title"><span><?php the_title(); ?></span></h1>
               <?php endif; ?>
