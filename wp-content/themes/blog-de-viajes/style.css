@@ -30,6 +30,26 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 20px;
 }
 
+blockquote {
+  margin: 20px 10px;
+  padding: .5em 10px;
+  quotes: '\201C''\201D''\2018''\2019';
+  font-size: 30px;
+  font-style: italic;
+  color: #A1A1A1;
+}
+blockquote::before {
+  color: #CCCCCC;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
 /* Menú Principal */
 nav.navigation {
   background-color: #008fD1;
