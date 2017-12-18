@@ -57,7 +57,8 @@ nav.navigation {
 nav.navigation ul {
   margin-top: 25px;
 }
-nav.navigation ul li.current_page_item {
+nav.navigation ul li.current_page_item,
+nav.navigation ul li.current_page_parent {
   background-color: #004D70;
 }
 nav.navigation ul li a {
@@ -117,7 +118,8 @@ div.title h1 span {
   nav.navigation ul li a {
     padding: 0;
   }
-  nav.navigation ul li.current_page_item {
+  nav.navigation ul li.current_page_item,
+  nav.navigation ul li.current_page_parent {
     background-color: transparent;
     border-bottom: 3px solid white;
   }
