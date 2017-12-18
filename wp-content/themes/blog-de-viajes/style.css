@@ -57,8 +57,11 @@ nav.navigation {
 nav.navigation ul {
   margin-top: 25px;
 }
+nav.navigation ul li.current_page_item {
+  background-color: #004D70;
+}
 nav.navigation ul li a {
-  padding: 0;
+  padding: 10px 0;
   color: white;
   text-transform: uppercase;
   font-size: 16px;
@@ -68,7 +71,7 @@ nav.navigation ul li a:hover {
   border: none;
 }
 nav.navigation li {
-  margin: 0 20px 20px 0;
+  margin: 0 0 20px 0;
   text-align: center;
 }
 .navbar-toggle {
@@ -107,6 +110,16 @@ div.title h1 span {
 @media ( min-width: 768px ) {
   nav.navigation {
     padding: 10px 0;
+  }
+  nav.navigation li {
+    margin: 0 20px 0 0;
+  }
+  nav.navigation ul li a {
+    padding: 0;
+  }
+  nav.navigation ul li.current_page_item {
+    background-color: transparent;
+    border-bottom: 3px solid white;
   }
   /* Agrega efecto Paralax (Desktop) */
   .site-header {
